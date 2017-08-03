@@ -8,7 +8,7 @@ set -e
 apt update && apt upgrade -y
 # install dependencies
 apt install git libnet1-dev libpcap0.8-dev -y
-
+apt-get clean all
 # install net-speeder
 cd /usr/local
 git clone https://github.com/ipchy/net-speeder.git
